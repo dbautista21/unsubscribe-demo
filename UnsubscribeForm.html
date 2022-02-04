@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Aleo'>
+    <link rel="stylesheet" type="text/css" href="UnsubscribeFormstyle.css">
+    <title>Unsubscribe</title>
+    <meta name="author" content="Dilan Bautista">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- Major Container -->
+    <div class="window">
+        <!-- Header Title-->
+        <div class="head">Unsubscribing? Aw so sorry to see you go.</div>
+        <!-- Progress Bar-->
+        <div class="progress-container">
+                <div class="progress-bar"></div>
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+        </div>
+        <!-- Main Content Box-->
+        <div class="event-box">
+            <!-- Page One-->
+            <div class="confirm-form" id="another-chance">
+                <div class="event-text">Before you go, would you like to give us another shot? <br>
+                    Keep your subscription to get your next month of
+                    <span class="highlight">NIZE Premium for $4.95</span>
+                    <hr>
+                </div>
+                <button class="btn" id="continue-btn">Continue</button>
+                <button class="btn" id="keepsub-btn">Keep Subscription</button>
+            </div>
+            <!-- Page Two-->
+            <div id="pause-sub" class="confirm-form">
+                <div class="event-text">
+                    <span class="event-title">If you'd like we can pause your subscription.</span><br>
+                    Tell us how long you'll have off
+                    and we'll pause your subscription until you come back again.
+                </div>
+                <div class="input-field">
+                    <span class="subsubtext">You won't be billed while your subscription is paused.</span>
+                    <select name="dates" class="select">
+                        <option value="1 month">1 month</option>
+                        <option value="2 months">2 months</option>
+                        <option value="3 months">3 months</option>
+                        <option value="4 months">4 months</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="subsubtext" id="notice-pause">If you cancel or pause you'll have access to your
+                    subscription until the end of your billing date.</div>
+                <button class="btn" id="pausesub-btn">Pause Subscription</button>
+                <button class="btn" id="continuecancel-btn">Cancel Subscription</button>
+            </div>
+            <!--Page Three-->
+            <div id = "survey" class = "confirm-form">
+                <div class = "event-text">
+                        Why are you cancelling your NIZE subscription?
+                </div>
+                <form class = "form-box">
+                    <input type = "radio" id = "better_service" name = "feedback" required value = "1"><label for = "better_service">I have found a better service.</label><br>
+                    <input type = "radio" id = "not_satisfied" name = "feedback" required value = "2"><label for = "not_satisfied">I am not satisfied with this service.</label><br>
+                    <input type = "radio" id = "too_pricy" name = "feedback" required value = "3"><label for = "too_pricy">The service is too pricy.</label><br>
+                    <input type = "radio" id = "other"name = "feedback" required value = "4"><label for = "other">Other</label><br>
+                    <textarea id = "other_text" rows = "1" cols = "60"></textarea>
+                </form>
+                <hr>
+                <a class = "link" href = "#" title = "skip">Skip</a>
+                <button class = "btn" id = "continuecancel-btn2" type = "submit" form = "form-box"
+                value = "Continue">Continue</button>
+            </div>
+        </div>
+        <script src = "UnsubscribeFormJS.js"></script>
+</body>
+
+</html>
